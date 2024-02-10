@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCA3AE"
+    tools:context=".RangeActivity">
+
+    <Button
+        android:id="@+id/btnBackRange"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#6A334B"
+        android:text="Back"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/ptSecondNumInRange"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/ptFirstNumInRange"
+        app:layout_constraintTop_toBottomOf="@+id/ptFirstNumInRange" />
+
+    <EditText
+        android:id="@+id/ptSecondNumInRange"
+        android:layout_width="165dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Second Number"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitleRange"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ptFirstNumInRange"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleRange" />
+
+    <EditText
+        android:id="@+id/ptFirstNumInRange"
+        android:layout_width="165dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="First Number"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/txtTitleRange"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleRange" />
+
+    <TextView
+        android:id="@+id/txtTitleRange"
+        android:layout_width="320dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Choose A Range"
+        android:textColor="#FFF1E6D2"
+        android:textColorHint="#F1E6D2"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFlowerRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnBackRange"
+        app:layout_constraintStart_toStartOf="@+id/btnBackRange"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackRange"
+        app:layout_constraintVertical_bias="0.254"
+        app:srcCompat="@drawable/flower_pic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

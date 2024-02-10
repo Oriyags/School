@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCA3AE"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivFlower"
+        android:layout_width="371dp"
+        android:layout_height="371dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtResult"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/btnCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate"
+        app:srcCompat="@drawable/flower_pic" />
+
+    <Button
+        android:id="@+id/btnRange"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#6A334B"
+        android:text="Range"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/btnOperation"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6A334B"
+        android:text="Operation"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnNumbers"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/btnNumbers" />
+
+    <Button
+        android:id="@+id/btnNumbers"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6A334B"
+        android:text="Numbers"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnRange"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnRange"
+        app:layout_constraintTop_toBottomOf="@+id/btnRange" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6A334B"
+        android:text="Calculate"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnOperation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnOperation"
+        app:layout_constraintTop_toBottomOf="@+id/btnOperation" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="320dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Intent Go and Back"
+        android:textColor="#FFF1E6D2"
+        android:textColorHint="#F1E6D2"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRange"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="Range"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnRange"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Result"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtOperation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/txtOperation" />
+
+    <TextView
+        android:id="@+id/txtOperation"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Operation"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnOperation"
+        app:layout_constraintTop_toBottomOf="@+id/txtButton" />
+
+    <TextView
+        android:id="@+id/txtButton"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Numbers"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRange"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/txtRange" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

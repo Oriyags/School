@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Game">
+
+    <ImageView
+        android:id="@+id/ivGame"
+        android:layout_width="372dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/opening_pic" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:width="175dp"
+        android:height="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Number"
+        android:inputType="number"
+        android:textColor="#8DFFFFFF"
+        android:textColorHint="#8DFFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvRange"
+        app:layout_constraintStart_toStartOf="@+id/tvRange"
+        app:layout_constraintTop_toBottomOf="@+id/tvRange" />
+
+    <Button
+        android:id="@+id/btnCheckNum"
+        android:layout_width="wrap_content"
+        android:layout_height="123dp"
+        android:layout_marginBottom="76dp"
+        android:width="347dp"
+        android:backgroundTint="#EA4E02"
+        android:fontFamily="sans-serif"
+        android:text="Check"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:iconTint="#EA4E02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etNumber"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/etNumber"
+        app:layout_constraintTop_toBottomOf="@+id/etNumber"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvRange"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textColor="#C4FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivGame"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/ivGame"
+        app:layout_constraintTop_toBottomOf="@+id/ivGame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCA3AE"
+    tools:context=".NumbersActivity">
+
+    <Button
+        android:id="@+id/btnStartNumbers"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#6A334B"
+        android:text="Start"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtChosenNum2Numbers"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="@+id/txtChosenNum1Numbers"
+        app:layout_constraintTop_toBottomOf="@+id/txtChosenNum1Numbers" />
+
+    <Button
+        android:id="@+id/btnBackNumbers"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#6A334B"
+        android:text="Back"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartNumbers"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnStartNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartNumbers" />
+
+    <TextView
+        android:id="@+id/txtTitleNumbers"
+        android:layout_width="320dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Numbers Lottery"
+        android:textColor="#FFF1E6D2"
+        android:textColorHint="#F1E6D2"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivFlowerNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnBackNumbers"
+        app:layout_constraintStart_toStartOf="@+id/btnBackNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/btnBackNumbers"
+        app:layout_constraintVertical_bias="0.492"
+        app:srcCompat="@drawable/flower_pic" />
+
+    <TextView
+        android:id="@+id/txtFirstNumNumbers"
+        android:layout_width="199dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:hint="First Number"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTitleNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleNumbers" />
+
+    <TextView
+        android:id="@+id/txtSecondNumNumbers"
+        android:layout_width="199dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:hint="Second Number"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitleNumbers"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toEndOf="@+id/txtFirstNumNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleNumbers" />
+
+    <TextView
+        android:id="@+id/txtChosenNum1Numbers"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:hint="Num"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/txtFirstNumNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstNumNumbers" />
+
+    <TextView
+        android:id="@+id/txtChosenNum2Numbers"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:hint="Num"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtSecondNumNumbers"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/txtChosenNum1Numbers"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondNumNumbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".Range">
+
+    <EditText
+        android:id="@+id/etSecondNum"
+        android:layout_width="179dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Second Number"
+        android:inputType="number"
+        android:textColor="#8DFFFFFF"
+        android:textColorHint="#8DFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toEndOf="@+id/etFirstNum"
+        app:layout_constraintTop_toBottomOf="@+id/ivRange" />
+
+    <EditText
+        android:id="@+id/etFirstNum"
+        android:layout_width="179dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="First Number"
+        android:inputType="number"
+        android:textColor="#8DFFFFFF"
+        android:textColorHint="#8DFFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/ivRange"
+        app:layout_constraintTop_toBottomOf="@+id/ivRange" />
+
+    <Button
+        android:id="@+id/btnRange"
+        android:layout_width="347dp"
+        android:layout_height="123dp"
+        android:backgroundTint="#EA4E02"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etSecondNum"
+        app:layout_constraintStart_toStartOf="@+id/etFirstNum"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstNum" />
+
+    <ImageView
+        android:id="@+id/ivRange"
+        android:layout_width="413dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/range" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

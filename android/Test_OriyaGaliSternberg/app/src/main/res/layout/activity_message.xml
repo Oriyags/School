@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F92FF"
+    tools:context=".MessageActivity">
+
+    <Button
+        android:id="@+id/btnBack2"
+        android:layout_width="257dp"
+        android:layout_height="82dp"
+        android:backgroundTint="#FFFFFF"
+        android:shadowColor="#7F92FF"
+        android:text="Back"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etSomeText"
+        app:layout_constraintStart_toStartOf="@+id/etSomeText"
+        app:layout_constraintTop_toBottomOf="@+id/etSomeText"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <EditText
+        android:id="@+id/etSomeText"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="272dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Something"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9FFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
